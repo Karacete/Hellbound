@@ -1,5 +1,5 @@
-# Bonafart
-<p>Bonafart isimli oyun mobil anlamda denediğim ilk oyundur. Unity oyun motoru kullanılarak oluşturulan bu oyun, basit mekanikleri olan bir platform oyunudur. </p>
+# Hellbound (Eski adıyla Bonafart)
+<p>Hellbound isimli oyun mobil anlamda denediğim ilk oyundur. Unity oyun motoru kullanılarak oluşturulan bu oyun, basit mekanikleri olan bir platform oyunudur. </p>
  <p>Şu anda Google Play Store üzerinden oynanabilmektedir.</p>
 <a href ="https://play.google.com/store/apps/details?id=com.MEKAGAMES.Bonafart">
  <img src="GitHubImages/getitongoogleplay.png" width="320" height="100"></a>
