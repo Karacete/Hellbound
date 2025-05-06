@@ -12864,7 +12864,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 7002466698598057105}
           m_TargetAssemblyTypeName: CharacterScript, Assembly-CSharp
-          m_MethodName: "\u0130leriHareket"
+          m_MethodName: IleriHareket
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

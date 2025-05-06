@@ -15,6 +15,6 @@ public class ScoreScript : MonoBehaviour
     private void FixedUpdate()
     {
         score = player.score;
-        scoreText.text = score.ToString() + " mt.";
+        scoreText.text = score.ToString();
     }
 }

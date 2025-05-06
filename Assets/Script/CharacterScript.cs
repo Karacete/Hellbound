@@ -25,7 +25,7 @@ public class CharacterScript : MonoBehaviour
         zipladiMi = false;
         sr = GetComponent<SpriteRenderer>();
         sr.flipX = false;
-        animasyon.SetBool("zýplamaBittiMi", true);
+        animasyon.SetBool("ziplamaBittiMi", true);
         animasyon.SetBool("kosmaBittiMi", true);
         script = GameObject.FindWithTag("AD").GetComponent<ADManagerScript>();
         loadScript = GameObject.FindWithTag("Load").GetComponent<LoadSceneManagerScript>();
@@ -35,7 +35,7 @@ public class CharacterScript : MonoBehaviour
     private void FixedUpdate()
     {
         score = this.gameObject.transform.position.x + 165.6;
-        score = Math.Round(score, 2);
+        score = Math.Round(score, 1);
         rb.velocity = new Vector3(yatayHareket * Time.deltaTime * runSpeed, rb.velocity.y, 0);
         if (!animasyon.GetBool("kosmaBittiMi"))
             StartCoroutine(KonumDegisikigi());
@@ -45,7 +45,7 @@ public class CharacterScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             Ziplama();
         if (Input.GetKeyDown(KeyCode.D))
-            ÝleriHareket();
+            IleriHareket();
         if (Input.GetKeyDown(KeyCode.A))
             GeriHareket();
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
@@ -57,7 +57,7 @@ public class CharacterScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             zipladiMi = false;
-            animasyon.SetBool("zýplamaBittiMi", true);
+            animasyon.SetBool("ziplamaBittiMi", true);
         }
 
         if (collision.gameObject.CompareTag("Water") || collision.gameObject.CompareTag("FireBall"))
@@ -104,7 +104,7 @@ public class CharacterScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Engel"))
             runSpeed = 500;
     }
-    public void ÝleriHareket()
+    public void IleriHareket()
     {
         yatayHareket = 1;
         sr.flipX = false;
@@ -136,8 +136,8 @@ public class CharacterScript : MonoBehaviour
                 rb.AddForce(new Vector2(0, jumpSpeed));
             zipladiMi = true;
             jump.Play();
-            animasyon.Play("Zýplama");
-            animasyon.SetBool("zýplamaBittiMi", false);
+            animasyon.Play("Ziplama");
+            animasyon.SetBool("ziplamaBittiMi", false);
         }
     }
     IEnumerator KonumDegisikigi()
