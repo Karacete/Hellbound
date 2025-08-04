@@ -1,7 +1,7 @@
 # Hellbound
 <p>Hellbound isimli oyun mobil anlamda denediğim ilk oyundur. Unity oyun motoru kullanılarak oluşturulan bu oyun, basit mekanikleri olan bir platform oyunudur. </p>
  <p>Şu anda Google Play Store üzerinden oynanabilmektedir.</p>
-<a href ="https://play.google.com/store/apps/details?id=com.MEKAGAMES.Bonafart">
+<a href ="https://play.google.com/store/apps/details?id=com.ParthenonGames.Hellbound">
  <img src="GitHubImages/getitongoogleplay.png" width="320" height="100"></a>
  <p></p>
  <p>Oyunun epik bir hikayesi bulunmaktadır. Oyunun hikayesi ve oynanışını izlemek isterseniz aşağıdaki bağantıya tıklayarak YouTube platformu üzerinden yayınlanmış olan teaser videosunu izleyebilirsiniz.</p>
